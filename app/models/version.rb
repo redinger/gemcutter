@@ -39,4 +39,8 @@ class Version < ActiveRecord::Base
     )
   end
 
+  def to_index
+    [rubygem.name, number, platform]
+  end
+
 end
